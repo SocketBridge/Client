@@ -9,10 +9,3 @@ $client = new SocketBridge($token);
 ```php
 $client->emit('my-channel', 'start', $data);
 ```
-
-### Retrieve data
-```php
-$client->on(function($channelId, $actionName, $data) {
-  // Your code
-});
-```
