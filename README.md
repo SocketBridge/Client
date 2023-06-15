@@ -5,13 +5,6 @@
 $client = new SocketBridge($token);
 ```
 
-### Authenticate socket
-```php
-$client->authenticate(function($channelId, $data) {
-  return true;
-});
-```
-
 ### Send data
 ```php
 $client->emit('my-channel', 'start', $data);
